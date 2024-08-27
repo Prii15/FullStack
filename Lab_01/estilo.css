@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(255, 241, 233);
+}
+
+/* unvisited link */
+a:link {
+    color: rgb(255, 115, 80);
+}
+
+/* visited link */
+a:visited {
+    color: rgb(73, 0, 0);
+}
+
+/* mouse over link */
+a:hover {
+    color: rgb(182, 0, 0);
+}
+
+/* selected link */
+a:active {
+    color: rgb(255, 157, 186);
+}
+
+h1{
+    text-align: center;
+    color: rgb(182, 0, 0);
+}
+
