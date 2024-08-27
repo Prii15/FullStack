@@ -1,0 +1,35 @@
+h1{
+    color: red;
+}
+
+div p{
+    font-size: 20pt;
+}
+
+#p1{
+    color: green;
+}
+
+#p2{
+    color: blue;
+}
+
+.classe_exemplo{
+    background-color: brown;
+}
+
+#id_exemplo{
+    background-color: coral;
+}
+
+a:visited{
+    color: coral;
+}
+
+a:hover{
+    background-color: darkblue;
+}
+
+div p:hover{
+    background-color: gray;
+}
