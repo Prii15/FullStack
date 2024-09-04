@@ -18,8 +18,6 @@ a{
     background-color: orangered;
 }
 
-
-
 #elemento1{
     position: absolute;
     top: 30px;
@@ -30,7 +28,6 @@ a{
     position: fixed;
     bottom: 0px;
     right: 0px;
-    background-color: orangered;
     z-index: 1;
 }
 
