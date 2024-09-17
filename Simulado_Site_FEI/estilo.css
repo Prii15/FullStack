@@ -1,0 +1,126 @@
+div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#menu1{
+    background-color: gray;
+    color: lightgray;
+}
+#menu1 div{
+    padding: 10px;
+}
+
+#menu2{
+    justify-content: space-between;
+}
+
+#logos{
+    justify-content: space-between;
+    margin-left: 200px;
+    padding: 25px;
+}
+
+#clicks{
+    justify-content: flex-end;
+    margin-right: 200px;
+    padding: 25px;
+}
+
+#pesquisa{
+    padding: 10px;
+    border: solid 3px darkblue;
+    color: darkblue;
+}
+
+.verde{
+    padding: 10px;
+    border: solid 3px green;
+    background-color: green;
+    color: white;
+}
+
+#azul{
+    padding: 10px;
+    border: solid 3px lightskyblue;
+    background-color: lightskyblue;
+    color: white;
+}
+
+#menu3{
+    background-color: darkblue;
+    color: white;
+}
+
+#menu3 div{
+    padding: 10px;
+    font-size: 10pt;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    color: darkblue;
+    font-size: 25pt;
+}
+
+#cursos div{
+    margin: 20px;
+}
+
+h2{
+    display: flex;
+    align-self: flex-start;
+    margin-left: 18%;
+
+    color: orange;
+    font-size: 25pt;
+}
+
+#projetos{
+    width: 64%;
+    margin-left: 18%;
+    margin-right: 18%;
+    padding: 10px;
+    font-size: 10pt;
+    justify-content: space-between;
+}
+
+.robofei{
+    width: 64%;
+    margin-left: 18%;
+    margin-right: 18%;
+    padding: 20px;
+    font-size: 10pt;
+}
+
+h3{
+    color: darkblue;
+    font-size: 25pt;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 20px;
+    justify-content: flex-start;
+}
+
+#blue{
+    background-color: rgb(119, 176, 214);
+    height: 100px;
+}
+
+#menubaixo div{
+    justify-content: center;
+    padding: 20px;
+    margin: 30px;
+    font-size: 10pt;
+}
+
+.bold{
+    font-weight: bold;
+}
