@@ -1,5 +1,6 @@
 body{
-    background-color: rgb(255, 241, 233);
+    background-color: rgb(250, 201, 192);
+    /*background-color: rgb(255, 241, 233);*/
 }
 
 /* unvisited link */
@@ -27,3 +28,50 @@ h1{
     color: rgb(182, 0, 0);
 }
 
+#abas{
+    font-size: 15pt;
+}
+
+.divisao{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 20px;
+    background-color: rgb(255, 241, 233);
+    width: 45%;
+    border: 3px solid rgb(206, 118, 118);
+}
+
+h3{
+    color: rgb(182, 0, 0);
+    margin-left: 2%;
+}
+
+.texto{
+    margin-left: 7%;
+}
+
+#digital1{
+    width: 400px;
+}
+
+#digital2{
+    width: 300px;
+}
+
+#tradicional1{
+    width: 400px;
+}
+
+#tradicional2{
+    width: 400px;
+}
+
+.centro{
+    text-align: center;
+}
+
+#minhafoto{
+    height: 300pt;
+    border: 3px solid rgb(206, 118, 118);
+}

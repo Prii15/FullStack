@@ -1,0 +1,45 @@
+#menu{
+    display: block;
+    width: 100%;
+
+    position: fixed;
+    top: 0px;
+    left: 0px;
+
+    background-color: rgb(163, 135, 255);
+}
+
+#rodape{
+    display: block;
+    width: 100%;
+
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+
+    background-color: rgb(163, 135, 255);
+}
+
+body{
+    background-color: rgb(195, 206, 223);
+}
+
+h1{
+    position: absolute;
+    left: 50%;
+    top: 30px;
+}
+
+.block{
+    border: solid 3px rgb(163, 135, 255);
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    top: 100px;
+    padding: 10px;
+    background-color: rgb(209, 215, 223);
+}
+
+.block:hover{
+    background-color: rgb(228, 228, 228);
+}

@@ -1,0 +1,57 @@
+.solid{
+    border: solid 5px red;
+}
+
+.dotted{
+    border: dotted 5px blue;
+}
+
+div, a{
+    margin: 10px; 
+    padding: 10px; 
+    height: 50px;
+    width: 50px;
+}
+
+a{
+    display: block;
+    background-color: orangered;
+}
+
+#elemento1{
+    position: absolute;
+    top: 30px;
+    left: 50%;
+}
+
+#elemento2{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1;
+}
+
+#elemento3{
+    position: relative;
+    bottom: 10px;
+    left: 30px;
+}
+
+a:hover{
+    display: block;
+    background-color: darkmagenta;
+}
+
+.blue{
+    width: 100%;
+    background-color: blue;
+}
+.blue:hover{
+    background-color: aqua;
+}
+
+.orange{
+    width: 100%;
+    background-color: orange;
+}
+
