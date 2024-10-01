@@ -1,0 +1,51 @@
+body{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+
+    justify-content: center;
+    background-color: rgb(215, 135, 215);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#princ{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-left: 70px;
+    margin-right: 70px;
+
+    position: absolute;
+    top: 0px;
+}
+
+#d20{
+    opacity: 7%;
+    width: 700px;
+    margin-top: 50px;
+}
+
+.lado{
+    display: flex;
+    width: 300px;
+    margin-left: 100px;
+    flex-direction: row;
+    justify-content: space-around;
+
+    font-size: 20px;
+}
+
+input{
+    font-size: 20px;
+}
+
+h1{
+    color: rgb(31, 1, 53);
+    font-size: 40px;
+}
+
+h2{
+    color: rgb(31, 1, 53);
+}
