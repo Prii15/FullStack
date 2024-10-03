@@ -14,24 +14,26 @@
             </h1>
 
             <h2>Digite um número entre 0 e 99:</h2>
-            <input id="chute" type="number">
+            <input id="chute" type="number" onfocus="limpa()">
 
-            <div class="lado">
+            <div id="lado">
                 <input type="button" value="Validar tentativa!" onclick="ex()">
                 <input type="button" value="Reiniciar!" onclick="rand()">
             </div>
            
+            <div>
+                <p id="Result">☆</p>
+            </div>
+            
     
-            <p id="Result"></p>
-    
-            <div class="lado">
+            <div id="lado2">
                 <div>
-                    <p>Tentativas menores:</p>
+                    <h2>Tentativas menores:</h2>
                     <p id="menor"></p>
                 </div>
                 
                 <div>
-                    <p>Tentativas maiores:</p>
+                    <h2>Tentativas maiores:</h2>
                     <p id="maior"></p>
                 </div>
             </div>
