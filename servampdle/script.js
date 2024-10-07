@@ -1,6 +1,6 @@
 const personagens = [
     // Servamps
-    { nome: "Sleepy Ash", genero: "Masculino", tipo: "Vampiro", filiacao: "Servamp", arco: "Principal" },
+    { nome: "Sleepy Ash", genero: "Masculino", tipo: "Vampiro", filiacao: "Servamp", arco: "Principal"},
     { nome: "Old Child", genero: "Masculino", tipo: "Vampiro", filiacao: "Servamp", arco: "Secundário" },
     { nome: "Doubt-Doubt", genero: "Masculino", tipo: "Vampiro", filiacao: "Servamp", arco: "Secundário" },
     { nome: "The Mother", genero: "Feminino", tipo: "Vampiro", filiacao: "Servamp", arco: "Secundário" },
@@ -35,7 +35,7 @@ const personagens = [
     // C3-members
     { nome: "Junichiro Kurumamori", genero: "Masculino", tipo: "Humano", filiacao: "C3", arco: "Secundário" },
     { nome: "Shifumi Kurumamori", genero: "Feminino", tipo: "Humano", filiacao: "C3", arco: "Secundário" },
-    { nome: "Suuhei Tsuyuki", genero: "Masculino", tipo: "Humano", filiacao: "C3r", arco: "Secundário" },
+    { nome: "Suuhei Tsuyuki", genero: "Masculino", tipo: "Humano", filiacao: "C3", arco: "Secundário" },
     { nome: "Taishi Toma", genero: "Masculino", tipo: "Humano", filiacao: "C3", arco: "Secundário" },
     { nome: "Tsurugi Kamiya", genero: "Masculino", tipo: "Humano", filiacao: "C3", arco: "Secundário" },
     { nome: "Yoshimasa Tsuyuki", genero: "Masculino", tipo: "Humano", filiacao: "C3", arco: "Secundário" },
@@ -89,6 +89,17 @@ function mostraTentativas(personagem){
 
     const tentativa = document.createElement("div");
     tentativa.className = "tentativa"; // Classe para estilizar cada sugestão
+
+    // Colocar imagem nas caracteristicas
+    // const img = document.createElement("img");
+    // img.src = personagem.imagem; // Define a URL da imagem
+    // img.alt = personagem.nome; // Texto alternativo para a imagem
+    // img.style.width = "50px"; // Ajuste o tamanho da imagem conforme necessário
+    // img.style.height = "50px";
+
+    // const imgPerosnagem = document.createElement("div");
+    // imgPerosnagem.className = "nome"; // Classe para estilizar cada sugestão
+    // imgPerosnagem.textContent = personagem.imagem; // Mostra o nome do personagem
     
     const nomePerosnagem = document.createElement("div");
     nomePerosnagem.className = "nome"; // Classe para estilizar cada sugestão
