@@ -33,7 +33,7 @@ const personagens = [
 
     // C3-members
     { nome: "Junichiro Kurumamori", genero: "Masculino", tipo: "Humano", filiacao: "C3", arco: "Secundário", arcoNum: 2, altura: 1.85 },
-    { nome: "Suuhei Tsuyuki", genero: "Masculino", tipo: "Humano", filiacao: "C3r", arco: "Secundário", arcoNum: 2, altura: 1.78 },
+    { nome: "Suuhei Tsuyuki", genero: "Masculino", tipo: "Humano", filiacao: "C3", arco: "Secundário", arcoNum: 2, altura: 1.78 },
     { nome: "Taishi Toma", genero: "Masculino", tipo: "Humano", filiacao: "C3", arco: "Secundário", arcoNum: 2, altura: 1.92 },
     { nome: "Tsurugi Kamiya", genero: "Masculino", tipo: "Humano", filiacao: "C3", arco: "Secundário", arcoNum: 2, altura: 1.70 },
     { nome: "Yoshimasa Tsuyuki", genero: "Masculino", tipo: "Humano", filiacao: "C3", arco: "Secundário", arcoNum: 2, altura: 1.78 },
