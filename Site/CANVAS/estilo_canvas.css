@@ -6,6 +6,8 @@ body{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+
+    background-color: rgb(246, 225, 202);
 }
 
 div{
@@ -17,12 +19,16 @@ div{
     text-align: center;
 }
 
+h1{
+    font-size: 50px;
+}
+
 #casa{
-    background-color: aquamarine;
+    background-color: #8ffdd4;
 }
 
 #linhas{
-    background-color: rgb(239, 239, 239);
+    background-color: rgb(255, 255, 255);
 }
 
 #slider{

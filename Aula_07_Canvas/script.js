@@ -160,12 +160,3 @@ ctx2.stroke();
 ctx2.fill();
 ctx2.closePath();
 
-function quadrado(x, y, largura, altura, cor_linha, cor_preenchimento){
-    ctx2.beginPath();
-    ctx2.lineWidth = 1;
-    ctx2.strokeStyle = cor_linha;
-    ctx2.fillStyle = cor_preenchimento;
-    ctx2.strokeRect(x,y,largura,altura); 
-    ctx2.fillRect(x,y,largura,altura);
-    ctx2.closePath();
-}
