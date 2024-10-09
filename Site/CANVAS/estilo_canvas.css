@@ -1,13 +1,5 @@
 body{
-    display: flex;
-    flex-direction: column;
-
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-
-    background-color: rgb(246, 225, 202);
+    background-color: rgb(182, 178, 255);
 }
 
 div{
@@ -32,8 +24,29 @@ h1{
 }
 
 #slider{
-    width: 100px;
+    width: 80px;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+}
+
+h1{
+    text-align: center;
+    color: rgb(0, 56, 154);
+}
+
+#abas{
+    font-size: 15pt;
+}
+
+#mudarCanva{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    margin-bottom: 20px;
 }

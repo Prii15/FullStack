@@ -198,7 +198,7 @@ function ex(){
             else if(chute != personagemSorteado){
                 document.getElementById("Result").innerHTML = "Personagem errado!";
                 document.getElementById("chute").style.setProperty("background-color", "rgb(255, 20, 0)");
-               
+
                 mostraTentativas(personagens[i]);
                 //document.getElementById("tentativa").innerHTML += "\nNome: " + personagens[i].nome + " | Genero: " + personagens[i].genero + " | Tipo: " + personagens[i].tipo + " | Filiação: " + personagens[i].filiacao;
             }
@@ -234,13 +234,13 @@ chuteInput.addEventListener("blur", function() {
 
 // Execute a function when the user presses a key on the keyboard
 chuteInput.addEventListener("keydown", function(event) {
-    // If the user presses the "Enter" key on the keyboard
-      if (event.key === "Enter") {
-          // Cancel the default action, if needed
-          event.preventDefault();
-          // Trigger the button element with a click
-          document.getElementById("valid").click();
-      }
+// If the user presses the "Enter" key on the keyboard
+    if (event.key === "Enter") {
+        // Cancel the default action, if needed
+        event.preventDefault();
+        // Trigger the button element with a click
+        document.getElementById("valid").click();
+    }
 });
 
 function filterSuggestions() {

@@ -133,7 +133,7 @@ const canvas1 = document.getElementById('casa');
 const canvas2 = document.getElementById('linhas');
 
 
-slider.addEventListener('input', () => {
+function changeSlider(){
     if (slider.value == 0) {
         canvas1.style.display = 'none'; // Oculta canvas "casa"
         canvas2.style.display = 'block'; // Mostra canvas "linhas"
@@ -151,6 +151,10 @@ slider.addEventListener('input', () => {
         //codigo do desenho
         desCasa();
     }
+}
+
+slider.addEventListener('input', () => {
+    changeSlider();
 });
 
 // Inicialmente, mostre o canvas "casa"
