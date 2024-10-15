@@ -3,40 +3,73 @@
 <html>
     <head>
         <title>Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="estilo.css"> 
     </head>
     <body>
-        <p id="abas">
-            <a href="home.html">Home</a> | <a href="project.html">Projetos</a>
-        </p>
+        <!-- navbar starts -->
+        <header>
+            <a href="/" class="logo"><i class="fab fa-node-js"></i> Jigar</a>
+
+            <div id="menu" class="fas fa-bars"></div>
+            <nav class="navbar">
+                <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- navbar ends -->
+
+        <div id="abas">
+            <div class="aba"><a href="home.html">Home</a></div>
+            <div class="aba"><a href="project.html">Projetos</a></div>
+        </div>
         
 
         <h1>
-            Priscila Cunha Vazquez <br>  
+            Priscila Cunha Vazquez  
         </h1>
 
-        <p class="centro">
-            <img id="minhafoto" src="foto_site.jpg" alt="Foto da autora do site, mulher de cabelo castanho ondulado com franja e óculos">
-        </p>
+        <div class="divSobre">
+            <div>
+                <img id="minhafoto" src="foto_site.jpg" alt="Foto da autora do site, mulher de cabelo castanho ondulado com franja e óculos">
+            </div>
 
-        <div class="divisao">
-            <h3>
-                Sobre mim!
-            </h3>
-
-            <p class="texto">
-                Meu nome é Priscila, tenho 21 anos e estou cursando <a href="https://portal.fei.edu.br/curso-de-engenharia-de-robos">Engenharia de Robôs</a> na FEI. <br>
-                Sempre gostei de matemática, mas só fui inspirada a aprender sobre programação além da robótica depois de jogar Hollow Knight. Me interessei no jogo e em como seria poder desenvolver algo assim!<br><br>
-
-                Além da formação, sou escritora e artista (desenhista tradicional e digital) no tempo livre.<br>
-                Por ser fã de livros e do meio geek, também estou me aventurando no mundo da costura para produzir cosplays.<br>
-            </p>
-
-            <p class="texto">
-                Sou de Santos, SP, mas moro a maior parte do ano em São Bernardo do Campo, SP, por conta da faculdade.<br><br>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d645.7035830192256!2d-46.57783188015369!3d-23.724151926230704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce415c18ec14cf%3A0x54806d0c2057b208!2sCondom%C3%ADnio%20Ch%C3%A1cara%20Fontes!5e0!3m2!1spt-BR!2sbr!4v1724782200047!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </p>
+            <div>
+                <div  id="sobreTexto">
+                    Sobre mim!
+                </div>
+                
+    
+                <div id="sobre">
+                    
+                    <p class="texto">
+                        Meu nome é Priscila, tenho 21 anos e estou cursando <a href="https://portal.fei.edu.br/curso-de-engenharia-de-robos">Engenharia de Robôs</a> na FEI. <br>
+                        Sempre gostei de matemática, mas só fui inspirada a aprender sobre programação além da robótica depois de jogar Hollow Knight. Me interessei no jogo e em como seria poder desenvolver algo assim!<br><br>
+        
+                        Além da formação, sou escritora e artista (desenhista tradicional e digital) no tempo livre.<br>
+                        Por ser fã de livros e do meio geek, também estou me aventurando no mundo da costura para produzir cosplays.<br>
+                    </p>
+        
+                    <!-- <p class="texto">
+                        Sou de Santos, SP, mas moro a maior parte do ano em São Bernardo do Campo, SP, por conta da faculdade.<br><br>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d645.7035830192256!2d-46.57783188015369!3d-23.724151926230704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce415c18ec14cf%3A0x54806d0c2057b208!2sCondom%C3%ADnio%20Ch%C3%A1cara%20Fontes!5e0!3m2!1spt-BR!2sbr!4v1724782200047!5m2!1spt-BR!2sbr" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </p> -->
+                </div>
+            </div>
         </div>
+
+        <!-- about section starts -->
+        <section class="about" id="about">  
+        </section>
+        <!-- about section ends -->
+        
 
         <div class="divisao">
             <h3>
@@ -69,7 +102,7 @@
             </ul>
         </div>
         
-        <div class="divisao">
+        <!-- <div class="divisao">
             <h3>Exemplos do meu trabalho com arte:</h3>
             <ul class="texto">
                 <li>
@@ -90,7 +123,7 @@
                     <br><br><br>
                 </p>
             </ul>
-        </div>
+        </div> -->
 
         <div class="divisao">
             <h3>Recomendações!</h3>
