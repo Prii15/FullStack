@@ -1,0 +1,52 @@
+body{
+    background-color: rgb(182, 178, 255);
+}
+
+div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+h1{
+    font-size: 50px;
+}
+
+#casa{
+    background-color: #8ffdd4;
+}
+
+#linhas{
+    background-color: rgb(255, 255, 255);
+}
+
+#slider{
+    width: 80px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    text-align: center;
+    color: rgb(0, 56, 154);
+}
+
+#abas{
+    font-size: 15pt;
+}
+
+#mudarCanva{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    margin-bottom: 20px;
+}

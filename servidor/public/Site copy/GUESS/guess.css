@@ -1,0 +1,74 @@
+body{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+
+    justify-content: center;
+    background-color: rgb(226, 164, 226);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#princ{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin-left: 30px;
+    margin-right: 70px;
+
+    position: absolute;
+    top: 0px;
+}
+
+#d20{
+    opacity: 7%;
+    width: 700px;
+    margin-top: 50px;
+}
+
+#lado{
+    display: flex;
+    width: 400px;
+    margin-top: 5px;
+    margin-left: 100px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#lado2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;    
+
+    font-size: 25px;
+}
+
+#lado2 div{
+    padding: 20px;
+    padding-top: 5px;
+    background-color: rgb(234, 199, 234);
+    opacity: 80%;
+
+    height: 320px;
+    width: 240px;
+}
+
+input{
+    font-size: 25px;
+}
+
+h1{
+    color: rgb(31, 1, 53);
+    font-size: 50px;
+}
+
+h2{
+    color: rgb(31, 1, 53);
+    font-size: 27px;
+}
+
+#Result{
+    font-size: 25px;
+    height: 30px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Adivinhação</title>
+        <link rel="stylesheet" href="guess.css"> 
+    </head>
+    <body>
+        <img id="d20" src="d20.png" alt="d20">
+
+        <div id="princ">
+            <h1>
+                Jogo da adivinhação!
+            </h1>
+
+            <h2>Digite um número entre 0 e 99:</h2>
+            <input id="chute" type="number" onfocus="limpa()">
+
+            <div id="lado">
+                <input id="valid" type="button" value="Validar tentativa!" onclick="ex()">
+                <input type="button" value="Reiniciar!" onclick="rand(), limpaTudo()">
+            </div>
+           
+            <div>
+                <p id="Result">☆</p>
+            </div>
+            
+    
+            <div id="lado2">
+                <div>
+                    <h2>Tentativas menores:</h2>
+                    <p id="menor"></p>
+                </div>
+                
+                <div>
+                    <h2>Tentativas maiores:</h2>
+                    <p id="maior"></p>
+                </div>
+            </div>
+            
+        </div>
+        
+        
+
+        <script src="guess.js" type="text/javascript"></script>
+    </body>
+
+</html>

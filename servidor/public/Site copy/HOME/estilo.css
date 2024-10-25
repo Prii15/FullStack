@@ -1,0 +1,155 @@
+body{
+    /* background-color: rgb(250, 201, 192); */
+    background-image: url('pordosol_crop.jpg');
+    background-size: 1550px;
+    background-position:top;
+    background-repeat: no-repeat;
+    background-color: #3c0c1a;
+}
+
+/* Links */
+a{    text-decoration: none;
+}
+
+/* unvisited link */
+a:link {
+    color: rgb(255, 115, 80);
+}
+
+/* visited link */
+a:visited {
+    color: rgb(139, 0, 0);
+}
+
+/* mouse over link */
+a:hover {
+    color: rgb(199, 19, 19);
+}
+
+/* selected link */
+a:active {
+    color: rgb(255, 157, 186);
+}
+
+
+/* Abas para alternnar entre home e project */
+#abas{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 45px;
+
+    background-color: #29191c;
+
+    font-size: 15pt;
+    display: flex;
+    flex-direction: row;
+
+    z-index: 50;
+}
+
+.aba{
+    position: relative;
+    background-color: #3a2328;
+    border-radius: 10px;
+    padding: 5px;
+    height: 25px;
+    margin: 5px;
+}
+
+.aba a{
+    color: #e86642;
+}
+
+.aba:hover {
+    background-color: #825c65;
+    color: #ffa389;
+}
+
+.aba a:hover{
+    color: #ffa389;
+}
+
+/* Titulo - Nome */
+h1{
+    position: relative;
+    top: 65px;
+    text-align: center;
+    color: #ffa389;
+    font-size: 50px;
+
+    margin-bottom: 150px;
+}
+
+/* Sobre (foto + descricao inicial) */
+h3{
+    color: #ffa389;
+    font-size: 25px;
+
+    text-align: center;
+}
+
+.divSobre{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 20px;
+    width: 60%;
+    height: 450px;
+
+    display: flex;
+}
+
+#sobreTexto{
+    color: #ffa389;
+    font-size: 25px;
+
+    text-align: left;
+
+    margin: 20px;
+}
+
+#minhafoto{
+    border-radius: 10px;
+    height: 400px;
+    border: 3px solid #29191c;
+
+    margin: 20px;
+}
+
+#sobre{
+    border-radius: 10px;
+
+    padding: 20px;
+
+    background-color: rgba(233, 250, 255, 0.5);
+}
+
+
+.divisao{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 20px;
+    background-color: rgb(255, 241, 233);
+    width: 45%;
+    border: 3px solid rgb(206, 118, 118);
+}
+
+/* imagens */
+#digital1{
+    width: 400px;
+}
+
+#digital2{
+    width: 300px;
+}
+
+#tradicional1{
+    width: 400px;
+}
+
+#tradicional2{
+    width: 400px;
+}

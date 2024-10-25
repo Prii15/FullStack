@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(255, 140, 0);
+    color: rgb(0, 0, 134);
+
+    width: 100%;
+}
+
+#naruto{
+    opacity: 5%;
+    width: 100%;
+}
+
+div{
+    position: absolute;
+    top: 0px;
+}
+
+#div4{
+    position: absolute;
+    top: 650px;
+    padding: 25px;
+    background-color: rgb(255, 119, 0);
+}

@@ -11,7 +11,7 @@ app.use(express.static('./public'));
 
 let server = http.createServer(app);
 
-server.listen(3000);
+server.listen(80);
 
 console.log("servidor rodando...");
 
