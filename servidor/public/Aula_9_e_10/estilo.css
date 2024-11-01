@@ -51,3 +51,7 @@ h1{
 .aba a:hover{
     color: rgb(223, 86, 0);
 }
+
+#cadastros{
+    display: inline;
+}

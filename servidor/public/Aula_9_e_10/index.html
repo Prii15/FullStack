@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Servidor da Pri</title>
+        <meta charset="utf-8">
+        <link href="estilo.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1>Servidor da Priscila</h1>
+
+        <div id="abas">
+            
+            <div class="aba"><a href="/Site copy/HOME/home.html">Meu Site</a></div>
+            <div class="aba"><a href="/Aula_02/index.html">Aula 02</a></div>
+            <div class="aba"><a href="/Aula_03/index.html">Aula 03</a></div>
+            <div class="aba"><a href="/Aula_04/index.html">Aula 04</a></div>
+            <div class="aba"><a href="/Aula_05_JavaScript/index.html">Aula 05</a></div>
+            <div class="aba"><a href="/Aula_06_JavaScript/index.html">Aula 06</a></div>
+            <div class="aba"><a href="/Aula_07_Canvas/index.html">Aula 07</a></div>
+            <div class="aba"><a href="/Aula_08_Canvas_animation/index.html">Aula 08</a></div>
+
+        </div>
+        
+        <div id="cadastros">
+            <h2>Cadastrar com GET</h2>
+            <form action="/cadastrar" method="get">
+                <p>Nome: <input type="text" name="cadastrar_nome"></p>
+                <p>Login: <input type="text" name="cadastrar_login"></p>
+                <p>Data do Nascimento: <input type="date" name="cadastrar_nascimento"></p>
+                <p>Senha: <input type="password" name="cadastrar_senha"></p>
+    
+                <input type="submit" value="Cadastrar">
+            </form>
+    
+            <h2>Cadastrar com POST</h2>
+            <form action="/cadastrar" method="post">
+                <p>Nome: <input type="text" name="cadastrar_nome"></p>
+                <p>Login: <input type="text" name="cadastrar_login"></p>
+                <p>Data do Nascimento: <input type="date" name="cadastrar_nascimento"></p>
+                <p>Senha: <input type="password" name="cadastrar_senha"></p>
+    
+                <input type="submit" value="Cadastrar">
+            </form>
+    
+            <h2>Login com POST</h2>
+            <form action="/logar" method="post">
+                <p>Login: <input type="text" name="logar_login"></p>
+                <p>Senha: <input type="password" name="logar_senha"></p>
+                <input type="submit" value="Logar">
+            </form>
+    
+            <h2>Divs</h2>
+            <form action="/divs">
+                <p>Quantidade de divs: <input type="number" name="qtde"></p>
+                <input type="submit" value="Gerar divs com get"  formmethod="get">
+                <input type="submit" value="Gerar divs com post"  formmethod="post" >
+            </form>
+        </div>
+        
+        
+    </body>
+
+</html>

@@ -36,8 +36,8 @@ a{
 }
 
 .titulo {
-    max-width: 30%; /* Limita a largura da imagem do título */
-    z-index: 1; /* Garante que a imagem do título esteja acima do fundo */
+    max-width: 30%; 
+    z-index: 1;
     filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.5));
 }
 
@@ -57,7 +57,7 @@ a{
 }
 
 .menu-item:hover{
-    transform: scale(1.1); /* Aumenta a imagem para 110% */
+    transform: scale(1.1); 
     
     filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.7));
 }

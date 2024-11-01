@@ -32,8 +32,8 @@ a, .menu-item{
 }
 
 .titulo {
-    max-width: 50%; /* Limita a largura da imagem do título */
-    z-index: 1; /* Garante que a imagem do título esteja acima do fundo */
+    max-width: 50%; 
+    z-index: 1; 
 }
 
 .menu {
@@ -53,7 +53,7 @@ a, .menu-item{
 }
 
 .menu-item:hover{
-    transform: scale(1.1); /* Aumenta a imagem para 110% */
+    transform: scale(1.1); 
     
     filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.5));
 }
@@ -66,8 +66,8 @@ a{
 
 .hover-image {
     display: none; /* Esconde as imagens por padrão */
-    width: 50px; /* Ajuste o tamanho da seta conforme necessário */
-    height: auto; /* Manter a proporção */
+    width: 50px;
+    height: auto;
 }
 
 .menu-item:hover .hover-image {
@@ -76,9 +76,9 @@ a{
 }
 
 .left {
-    margin-right: 10px; /* Espaçamento à direita da seta à esquerda */
+    margin-right: 10px;
 }
 
 .right {
-    margin-left: 10px; /* Espaçamento à esquerda da seta à direita */
+    margin-left: 10px;
 }

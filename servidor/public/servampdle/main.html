@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Servampdle</title>
+        <link rel="stylesheet" href="estilo.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <img id="background" src="servampdle_background2.jpg" alt="servamp">
+
+        <div id="princ">
+            <h1>
+                Servampdle!
+            </h1>
+
+            <h2>Adivinhe o personagem de Servamp:</h2>
+
+            <input type="text" id="chute" placeholder="Digite um nome..." onkeyup="filterSuggestions()" onfocus="limpa()">
+            <div id="suggestions" class="suggestions"></div>
+
+            <div id="lado">
+                <input id="valid" type="button" value="Validar tentativa!" onclick="ex()">
+                <input type="button" value="Reiniciar!" onclick="rand(), limpaTudo()">
+            </div>
+
+
+        
+            <div>
+                <p id="Result">☆</p>
+            </div>
+            
+    
+            <div id="lado2">
+                <div>
+                    <h2>Tentativas:</h2>
+                    <div id="tentativas" class="tentativas"></div>
+                </div>
+            </div>
+            
+        </div>
+        
+
+        <script src="script.js" type="text/javascript"></script>
+    </body>
+
+</html>

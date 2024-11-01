@@ -22,7 +22,7 @@ body {
     color: white;
 }
 
-a, #buttonPlay{
+a, #buttonPlay, .music{
     cursor: url('cursor.cur'), auto;
     
     color: white;
@@ -38,13 +38,13 @@ a, #buttonPlay{
 
     background-color: transparent; /* Fundo transparente */
     border: none; /* Sem borda */
-    padding: 10px; /* Espaçamento interno */
-    outline: none; /* Remove o contorno ao focar */
+    padding: 10px; 
+    outline: none; 
 }
 
 .icon {
-    width: 30px; /* Ajuste o tamanho da imagem */
-    height: 25px; /* Ajuste o tamanho da imagem */
+    width: 30px; 
+    height: 25px;
 
     position: fixed;
     top: 200px;
@@ -52,7 +52,7 @@ a, #buttonPlay{
 }
 
 .music:hover .icon {
-    filter: brightness(0.8); /* Efeito ao passar o mouse */
+    filter: brightness(0.8); 
 }
 
 
@@ -78,8 +78,7 @@ a, #buttonPlay{
 }
 
 .menu-item:hover{
-    transform: scale(1.1); /* Aumenta a imagem para 110% */
-    
+    transform: scale(1.1);    
     filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.5));
 }
 
@@ -110,8 +109,8 @@ canvas {
 }
 
 .titulo {
-    max-width: 30%; /* Limita a largura da imagem do título */
-    z-index: 1; /* Garante que a imagem do título esteja acima do fundo */
+    max-width: 30%; 
+    z-index: 1; 
 }
 
 /* TELA DE MENU DO JOGO */
@@ -131,6 +130,7 @@ canvas {
     width: 1200px;
 }
 
+/* TELA DE MENU DO FIM DO JOGO */
 #fim{
     position: relative; 
     top: 5px;
@@ -149,17 +149,52 @@ canvas {
 
 /* REGRAS DO JOGO */
 #regras{
+    position: relative;
+    top: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     width: 600px;
+
+    font-size: 20px;
+    filter: drop-shadow(2px 2px 5px rgb(0, 0, 0));
 }
 
 .tituloRegras{
-    max-width: 20%; /* Limita a largura da imagem do título */
-    z-index: 1; /* Garante que a imagem do título esteja acima do fundo */
+    max-width: 20%; 
+    z-index: 1; 
     position: relative;
     top: 20px;
     left: 15%;
+    filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.5));
 }
 
+#setas{
+    position: relative;
+    top: 30px;
+}
+#setas img{
+    padding: 5px;
+}
+
+#outrasTeclas{
+    display: flex;
+    flex-direction: row;
+
+    position: relative;
+    top: 30px;
+    left: 140px;
+}
+
+#outrasTeclas div{
+    padding: 20px;
+}
+
+.teclas{
+    height: 50px;
+}
 
 /* BOTAO DE PLAY */
 .menu-jogo {
@@ -172,8 +207,8 @@ canvas {
 #buttonPlay{
     background: none; /* Remove o fundo */
     border: none; /* Remove a borda */
-    color: rgb(255, 255, 255); /* Cor do texto */
-    font-size: 70px; /* Tamanho do texto */
+    color: rgb(255, 255, 255); 
+    font-size: 70px; 
     font-family: 'Hollow Knight';
 
     position: absolute;
@@ -182,15 +217,15 @@ canvas {
 }
 
 #buttonPlay:hover, #buttonRestart:hover, #buttonMenu:hover {
-    transform: scale(1.1); /* Aumenta o tamanho do botão ao passar o mouse */
+    transform: scale(1.1);
     filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.7));
 }
 
 #buttonRestart, #buttonMenu{
     background: none; /* Remove o fundo */
     border: none; /* Remove a borda */
-    color: rgb(255, 255, 255); /* Cor do texto */
-    font-size: 40px; /* Tamanho do texto */
+    color: rgb(255, 255, 255); 
+    font-size: 40px;
     font-family: 'Hollow Knight';
 
     margin-bottom: 15px;
@@ -201,8 +236,8 @@ canvas {
 
 
 .tituloFim{
-    max-width: 20%; /* Limita a largura da imagem do título */
-    z-index: 1; /* Garante que a imagem do título esteja acima do fundo */
+    max-width: 20%; 
+    z-index: 1; 
     position: relative;
     top: 20px;
     left: 15%;

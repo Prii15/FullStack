@@ -1,0 +1,120 @@
+body{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#princ{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    margin-left: 30px;
+    margin-right: 70px;
+
+    position: absolute;
+    top: 0px;
+}
+
+#background{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+
+    opacity: 60%;
+}
+
+#lado{
+    display: flex;
+    width: 500px;
+    margin-top: 5px;
+    margin-left: 100px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#lado2{
+    display: flex;    
+
+    font-size: 25px;
+    justify-content: center;
+
+    padding: 20px;
+    padding-top: 5px;
+    background-color: rgb(255, 254, 245);
+    opacity: 80%;
+
+}
+
+input{
+    font-size: 25px;
+}
+
+h1{
+    color: rgb(0, 0, 0);
+    font-size: 60px;
+}
+
+h2{
+    color: rgb(0, 0, 0);
+    font-size: 27px;
+}
+
+#Result{
+    font-size: 25px;
+    height: 30px;
+}
+
+.suggestions {
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    position: relative;
+    z-index: 1000;
+    background: white;
+    width: 400px;
+}
+.suggestion{
+    padding: 10px;
+    cursor: pointer;
+}
+.suggestion:hover {
+    background: #f0f0f0;
+}
+
+.tentativas{
+    display: flex;
+    flex-direction: column; 
+}
+
+.tentativas div{
+    margin: 5px;
+}
+
+.tentativa{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 600px;
+}
+
+.tentativa div{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 15px;
+    border: solid black 3px;
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
