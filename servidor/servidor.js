@@ -1,10 +1,14 @@
 //trabalhando com backend, o js eh executado, e nao linkado em um html
 require("colors");
-
 let http = require("http");
 let express = require("express");
 let app = express();
 let bodyParser = require("body-parser");
+let mongodb = require("mongodb");
+
+const MongoClient = mongodb.MongoClient;
+const uri = "mongodb+srv://Prii14:SA8mxj6xEqP23aeG@prii.tq3ri.mongodb.net/?retryWrites=true&w=majority&appName=Prii";
+const client = new MongoClient(uri, { useNewUrlParser: true });
 
 app.use(express.static('./public'));
 app.use(bodyParser.urlencoded({extended: false}));
@@ -106,6 +110,111 @@ app.post('/login', function(req, resp){
         resp.render('resposta.ejs', {resposta: "Falha!", mensagem: "Login ou senha inválidos!"})
     }
 })
+//FIM DA ENTREGA 08
+
+//BANCO DE DADOS - FUNÇÕES
+app.get('/cadastrar_livro', function(req, resp){
+    let nome = req.query.cadastra_nome;
+    let autor = req.query.cadastra_autor;
+    let isbn = req.query.cadastra_isbn;
+    let editora = req.query.cadastra_editora;
+    let data = req.query.cadastra_data;
+
+    console.log(nome, autor, isbn, editora, data);
+
+    // salva dados no banco
+    client.db("Prii").collection("livros").insertOne(
+    { 
+        db_nome: nome,
+        db_autor: autor,
+        db_isbn: isbn,
+        db_editora: editora,
+        db_data: data
+        }, function (err) {
+        if (err) {
+            resp.render('resposta.ejs', {resposta: "Falha!", mensagem: "Erro ao cadastrar livro!"});
+        }
+        else {
+            resp.render('resposta.ejs', {resposta: "Sucesso!", mensagem: "Livro cadastrado com sucesso!"});     
+        };
+    });
+})
+
+app.get('/buscar_livro_nome', function(req, resp){
+    let nome = req.query.buscar_nome;
+
+    // busca um usuário no banco de dados
+    client.db("Prii").collection("livros").find(
+        {db_nome: nome}).toArray(function(err, items) {
+            console.log(items);
+            if (items.length == 0) {
+                resp.render('resposta.ejs', {resposta: "Falha!", mensagem: "Livro não encontrado!"});
+            }
+            else if (err) {
+                resp.render('resposta.ejs', {resposta: "Falha!", mensagem: "Erro ao buscar livro!"});
+            }
+            else {
+                resp.render('resposta.ejs', {resposta: "Sucesso!", mensagem: items.length + " livro(s) encontrado(s)!"});       
+            };
+        });
+})
+
+app.get('/buscar_livro_isbn', function(req, resp){
+    let isbn = req.query.buscar_isbn;
+
+    // busca um usuário no banco de dados
+    client.db("Prii").collection("livros").find(
+        {db_isbn: isbn}).toArray(function(err, items) {
+            console.log(items);
+            if (items.length == 0) {
+                resp.render('resposta.ejs', {resposta: "Falha!", mensagem: "Livro não encontrado!"});
+            }
+            else if (err) {
+                resp.render('resposta.ejs', {resposta: "Falha!", mensagem: "Erro ao buscar livro!"});
+            }
+            else {
+                resp.render('resposta.ejs', {resposta: "Sucesso!", mensagem: items.length + " livro(s) encontrado(s)!"});     
+            };
+        });
+})
+//FIM DA AULA DE BANCO DE DADOS
+
+//ENTREGA 09 - BLOG
+app.get('/cadastrar_post', function(req, resp){
+    let titulo = req.query.cadastra_titulo;
+    let resumo = req.query.cadastra_resumo;
+    let conteudo = req.query.cadastra_conteudo;
+
+    client.db("Prii").collection("posts_blog").insertOne(
+        { 
+            db_titulo: titulo,
+            db_resumo: resumo,
+            db_conteudo: conteudo
+            }, function (err) {
+            if (err) {
+                resp.render('resposta_blog.ejs', {resposta: "Falha!", mensagem: "Erro ao cadastrar post!"})
+            }
+            else {
+                resp.render('resposta_blog.ejs', {resposta: "Sucesso!", mensagem: "Post cadastrado com sucesso!"})       
+            };
+        });
+})
+
+
+app.get('/blog', function (req, resp){
+    client.db("Prii").collection("posts_blog").find({}).toArray(function(err, posts) {
+        if (err) {
+            resp.render('resposta.ejs', { resposta: "Falha!", mensagem: "Erro ao buscar posts!" });
+        }
+        else {
+            resp.render('blog.ejs', {
+                posts
+            });
+        }
+        
+    });
+});
+//FIM DA ENTREGA 09
 
 
 let server = http.createServer(app);

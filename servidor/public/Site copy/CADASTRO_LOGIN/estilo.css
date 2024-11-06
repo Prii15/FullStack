@@ -16,13 +16,28 @@ body{
 
     background-color: rgba(253, 190, 208, 0.7);
     width: 25%;
-    height: 400px;
+    height: 450px;
+    margin-bottom: 30px;
 }
 
 h1{
     text-align: center;
     color: #e90035;
     font-size: 55px;
+}
+
+h2{
+    text-align: center;
+    color: #e90035;
+    font-size: 35px;
+    margin: 5px;
+}
+
+h3{
+    text-align: center;
+    color: #e90035;
+    font-size: 25px;
+    margin: 5px;
 }
 
 .aba{

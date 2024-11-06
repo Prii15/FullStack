@@ -1,0 +1,120 @@
+body{
+    background-color: #d70000;
+    font-size: 20px;
+}
+
+.cadast{
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+p{
+    margin: 5px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 15px;
+
+    background-color: rgba(255, 190, 129, 0.7);
+    border: solid rgb(0, 0, 0) 3px;
+    width: 25%;
+    margin-bottom: 30px;
+}
+
+#posts{
+    width: 65%;
+    justify-content: left;
+    text-align: left;
+
+    padding: 15px;
+}
+
+h1{
+    text-align: center;
+    color: #000000;
+    font-size: 55px;
+}
+
+h2{
+    margin: 5px;
+}
+
+.button{
+    color: #000000; /* Cor do texto */
+    font-size: 20px; /* Tamanho do texto */
+
+    background-color: #b00000;
+    border: solid #740000 2px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+
+    cursor: pointer;
+}
+
+.aba{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: #b00000;
+    border: solid #740000 2px;
+    border-radius: 10px;
+
+    padding: 10px;
+    width: 15%;
+    text-align: center;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.4));
+}
+
+.aba a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.aba:hover, .button:hover {
+    background-color: #c40000;
+    color: #000000;
+}
+
+.aba a:hover{
+    color: rgb(0, 0, 0);
+}
+
+.pucca{
+    z-index: -1;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.garu{
+    z-index: -1;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+.casal{
+    z-index: -1;
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+
+.inverter-horizontalmente {
+    transform: scaleX(-1);
+}

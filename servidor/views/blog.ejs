@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> Blog </title>
+        <meta charset="utf-8">
+        <link href="Site copy/BLOG/estilo_blog.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="aba"><a href="Site copy/BLOG/blog_form.html">Criar Post</a></div>
+
+        <div class="pucca">
+            <img src="Site copy/BLOG/pucca.png" height="150" width="auto">
+        </div>
+        
+        <div class="garu">
+            <img src="Site copy/BLOG/garu.png" height="150" width="auto">
+        </div>
+
+        <% posts.forEach(post => { %>
+                <div class="form" id="posts">
+                    <h2><strong><%= post.db_titulo %></strong></h2>
+                    <p><%= post.db_resumo %></p>
+                    <p><%= post.db_conteudo %></p>
+                </div>
+        <% }) %>
+        
+            
+    </body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Banco de Dados</title>
+        <meta charset="utf-8">
+        <link href="../Site copy/CADASTRO_LOGIN/estilo.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1>Banco de Dados</h1>
+        
+        <div id="cadastros">
+            <h2>CREATE</h2>
+            <h3>Cadastrar Livro</h3>
+            <form method="get" action="/cadastrar_livro">
+                <p>Nome do livro: <input type="text" name="cadastra_nome"></p>
+                <p>Nome do autor: <input type="text" name="cadastra_autor"></p>
+                <p>ISBN: <input type="number" name="cadastra_isbn"></p>
+                <p>Editora: <input type="text" name="cadastra_editora"></p>
+                <p>Data de Lançamento: <input type="date" name="cadastra_data"></p>
+    
+                <input type="submit" value="Cadastrar" class="button">
+            </form>
+        </div>
+        
+        <div id="cadastros">
+            <h2>READ</h2>
+
+            <h3>Buscar Livro</h3>
+            <form method="get" action="/buscar_livro_nome">
+                <p>Nome do livro: <input type="text" name="buscar_nome"></p>
+                <input type="submit" value="Buscar" class="button">
+            </form>
+
+            <form method="get" action="/buscar_livro_isbn">
+                <p>ISBN: <input type="number" name="buscar_isbn"></p>
+                <input type="submit" value="Buscar" class="button">
+            </form>
+        </div>
+        
+    </body>
+
+</html>
