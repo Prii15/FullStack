@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Cadastro</title>
+        <meta charset="utf-8">
+        <link href="estilo.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="menu">
+            <div class="aba"><a href="/carros_venda.html">Comprar</a></div>
+            <div class="aba"><a href="/carros_disponiveis">Catálogo</a></div>
+    
+            <div class="aba"><a href="/cadastro_usuario.html">Cadastrar</a></div>
+            <div class="aba"><a href="/login_usuario.html">Login</a></div>
+    
+            <div class="aba"><a href="/gerencia_carros.html">Gerência</a></div>
+        </div>
+        
+        <h1>Cadastrar</h1> 
+
+        <div class="cadastros">
+            <form action="/cadastra" method="post">
+                <p>Nome: <input type="text" name="cadastrar_nome"></p>
+                <p>Login: <input type="text" name="cadastrar_login"></p>
+                <p>Senha: <input type="password" name="cadastrar_senha"></p>
+    
+                <input type="submit" value="Cadastrar" class="button">
+            </form>
+
+            <p>Já é cadastrado?</p>
+            <div><a href="login_usuario.html">Login</a></div>
+        </div>
+        
+    </body>
+
+</html>

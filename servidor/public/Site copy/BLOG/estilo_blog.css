@@ -116,5 +116,6 @@ h2{
 }
 
 .inverter-horizontalmente {
+    
     transform: scaleX(-1);
 }

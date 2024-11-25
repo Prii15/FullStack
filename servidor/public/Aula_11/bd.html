@@ -10,7 +10,7 @@
     <body>
         <h1>Banco de Dados</h1>
         
-        <div id="cadastros">
+        <div class="cadastros">
             <h2>CREATE</h2>
             <h3>Cadastrar Livro</h3>
             <form method="get" action="/cadastrar_livro">
@@ -24,7 +24,7 @@
             </form>
         </div>
         
-        <div id="cadastros">
+        <div class="cadastros">
             <h2>READ</h2>
 
             <h3>Buscar Livro</h3>
@@ -36,6 +36,27 @@
             <form method="get" action="/buscar_livro_isbn">
                 <p>ISBN: <input type="number" name="buscar_isbn"></p>
                 <input type="submit" value="Buscar" class="button">
+            </form>
+        </div>
+
+        <div class="cadastros">
+            <h2>UPDATE</h2>
+
+            <h3>Atualizar Livro</h3>
+            <form method="get" action="/atualizar_editora_livro">
+                <p>Busca por ISBN: <input type="number" name="buscar_isbn"></p>
+                <p>Nova Editora: <input type="text" name="atualizar_editora"></p>
+                <input type="submit" value="Atualizar" class="button">
+            </form>
+        </div>
+
+        <div class="cadastros">
+            <h2>DELETE</h2>
+
+            <h3>Deletar Livro</h3>
+            <form method="get" action="/deletar_livro">
+                <p>Busca por ISBN: <input type="number" name="buscar_isbn"></p>
+                <input type="submit" value="Deletar" class="button">
             </form>
         </div>
         

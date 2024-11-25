@@ -1,0 +1,65 @@
+body{
+    background-color: coral;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    width: 50%;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.aba{
+    position: relative;
+
+    background-color: rgb(255, 175, 146);
+    border: solid coral 2px;
+    border-radius: 10px;
+
+    padding: 10px;
+    margin: 10px;
+
+    text-align: center;
+}
+
+.aba a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.aba:hover, .button:hover {
+    background-color: rgb(255, 147, 108);
+    color: #000000;
+}
+
+.aba a:hover{
+    color: rgb(0, 0, 0);
+}
+
+#largura{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.form{
+    background-color: rgb(255, 133, 88);
+    margin: 10px;
+}
+
+#gerencia{
+    display: flex;
+    flex-direction: row;
+}
+
+.cadastros2{
+    background-color: rgb(255, 133, 88);
+    margin: 10px;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="utf-8">
+        <link href="estilo.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div class="menu">
+            <div class="aba"><a href="/carros_venda.html">Comprar</a></div>
+            <div class="aba"><a href="/carros_disponiveis">Catálogo</a></div>
+    
+            <div class="aba"><a href="/cadastro_usuario.html">Cadastrar</a></div>
+            <div class="aba"><a href="/login_usuario.html">Login</a></div>
+    
+            <div class="aba"><a href="/gerencia_carros.html">Gerência</a></div>
+        </div>
+        
+        <h1>Login</h1>
+
+        <div id="cadastros">    
+            <form action="/login" method="post">
+                <p>Login: <input type="text" name="logar_login"></p>
+                <p>Senha: <input type="password" name="logar_senha"></p>
+                <input type="submit" value="Logar" class="button">
+            </form>
+
+            <p>Ainda não é cadastrado?</p>
+            <div><a href="cadastro_usuario.html">Cadastrar</a></div>
+        </div>
+        
+    </body>
+
+</html>

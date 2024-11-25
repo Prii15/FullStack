@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> Comprar </title>
+        <meta charset="utf-8">
+        <link href="estilo.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="menu">
+            <div class="aba"><a href="/carros_venda.html">Comprar</a></div>
+            <div class="aba"><a href="/carros_disponiveis">Catálogo</a></div>
+    
+            <div class="aba"><a href="/cadastro_usuario.html">Cadastrar</a></div>
+            <div class="aba"><a href="/login_usuario.html">Login</a></div>
+    
+            <div class="aba"><a href="/gerencia_carros.html">Gerência</a></div>
+        </div>
+
+        <h1>Comprar</h1>
+        <form action="/vender" method="post">
+
+            <p>Marca: <input type="text" name="marca"></p>
+            <p>Modelo: <input type="text" name="modelo"></p>
+            <p>Ano: <input type="number" name="ano"></p>
+
+            <input type="submit" value="Comprar" class="button">
+
+        </form>
+    </body>
+
+</html>

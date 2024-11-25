@@ -177,6 +177,49 @@ app.get('/buscar_livro_isbn', function(req, resp){
             };
         });
 })
+
+app.get('/atualizar_editora_livro', function(req, resp){
+    let isbn = req.query.buscar_isbn;
+    let editora = req.query.atualizar_editora;
+
+    // atualiza editora do livro do usuário
+    client.db("Prii").collection("livros").updateOne(
+        { 
+            db_isbn: isbn
+        },
+        { 
+            $set: {db_editora: editora} 
+        }, function (err, result) {
+            console.log(result);
+            if (result.modifiedCount == 0) {
+                resp.render('resposta.ejs', {resposta: "Falha!", mensagem: "Livro não encontrado!"})
+            }else if (err) {
+                resp.render('resposta.ejs', {resposta: "Falha!", mensagem: "Erro ao atualizar livro!"})
+            }else {
+                resp.render('resposta.ejs', {resposta: "Sucesso!", mensagem: "Livro atualizado com sucesso!"})       
+            };
+    });
+})
+
+app.get('/deletar_livro', function(req, resp){
+    let isbn = req.query.buscar_isbn;
+
+    // remove livro (apenas 1, pq eh deleteOne, se fosse delete removia todos que encontrasse)
+    client.db("Prii").collection("livros").deleteOne(
+        { 
+            db_isbn: isbn
+        } , function (err, result) {
+            console.log(result);
+            if (result.deletedCount == 0) {
+                resp.render('resposta.ejs', {resposta: "Falha!", mensagem: "Livro não encontrado!"})
+            }else if (err) {
+                resp.render('resposta.ejs', {resposta: "Falha!", mensagem: "Erro ao deletar livro!"})
+            }else {
+                resp.render('resposta.ejs', {resposta: "Sucesso!", mensagem: "Livro deletado com sucesso!"})       
+            };
+        });
+
+})
 //FIM DA AULA DE BANCO DE DADOS
 
 //ENTREGA 09 - BLOG
