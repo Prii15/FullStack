@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Hollow_Knight';
+    src: url('fonts/Trajan\ Pro\ Regular.ttf') format('ttf'),;
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    cursor: url('cursor.cur'), auto;
+
+    margin: 0;
+
+    background-image: url('imagens/voidheart_back.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Altura total da tela */
+
+    font-family: 'Hollow_Knight';
+    color: white;
+}
+
+a{
+    cursor: url('cursor.cur'), auto;
+    
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 30px;
+}
+
+.titulo {
+    max-width: 30%; 
+    z-index: 1; 
+    filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.3));
+}
+
+.menu, .divisoria, #gif {
+    position: fixed;
+    bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.menu-item{
+    padding: 15px;
+    margin: 10px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.menu-item:hover{
+    transform: scale(1.1); 
+    filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.5));
+}
+
+#escrito{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 25px;
+
+    position: relative;
+    top: 40px;
+    
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
+
+}
+
+#escrito div{
+    width: 40%;
+}
+
+#content{
+    text-align: center;
+}
+
+.maior{
+    font-size: 30px;
+    font-weight: 600;
+    
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 1));
+}
+
+.divisoria{
+    filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.3));
+    bottom: 70px;
+}
+
+#gif{
+    left: 5px;
+    bottom: 90px;
+    z-index: 1;
+}

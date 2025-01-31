@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Hollow_Knight';
+    src: url('fonts/Trajan\ Pro\ Regular.ttf') format('ttf'),;
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    cursor: url('cursor.cur'), auto;
+
+    margin: 0;
+
+    background-image: url('imagens/voidheart_back.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Altura total da tela */
+
+    font-family: 'Hollow_Knight';
+    color: white;
+}
+
+a, .menu-item{
+    cursor: url('cursor.cur'), auto; 
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 30px;
+}
+
+.titulo {
+    max-width: 50%; 
+    z-index: 1; 
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 70px;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+    margin: 10px;
+    position: relative;
+}
+
+.menu-item:hover{
+    transform: scale(1.1); 
+    
+    filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.5));
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.hover-image {
+    display: none; /* Esconde as imagens por padrão */
+    width: 50px;
+    height: auto;
+}
+
+.menu-item:hover .hover-image {
+    display: block; /* Mostra as imagens ao passar o mouse sobre o item do menu */
+    filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.5));
+}
+
+.left {
+    margin-right: 10px;
+}
+
+.right {
+    margin-left: 10px;
+}

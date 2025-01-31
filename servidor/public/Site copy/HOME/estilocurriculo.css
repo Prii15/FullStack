@@ -1,0 +1,140 @@
+
+.navbar {
+    background-color: #000000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.navbar ul li a:hover {
+    color: rgb(0, 173, 203);
+    background-color: #010017;
+}
+
+section {
+    padding: 100px 20px;
+    margin-top: 10px;
+}
+
+body{
+    background-color: rgb(68, 62, 82);
+    color: white;
+    font-size: large;
+    height: 100%;
+}
+
+.topo{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgb(68, 62, 82)), url('imagens_home/Captura de tela 2025-01-29 204031.png');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    color: azure;
+    padding: 80px;
+    height: 300px;
+
+}
+
+.topo h1{
+    font-size: 70px;
+    margin-left: 45%;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.faixa{
+    background-color: rgb(26, 22, 27);
+    box-shadow: 1px 1px 1rem rgb(0, 0, 0);
+    position: absolute;
+    top: 0px;
+    left: 5%;
+
+    width: 30%;
+    min-height: 100vh;
+
+    padding-top: 50px;
+    color: rgb(221, 221, 221);
+}
+
+.faixa img{
+    width: 60%;
+    margin: 20%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    border-radius: 20px;
+    border: solid 3px black;
+}
+
+.faixa div{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.faixa h2{
+    margin-bottom: 0px;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+
+.formacao{
+    border-left: solid 2px white;
+    font-size: large;
+}
+.formacao li{
+    margin-bottom: 10px;
+}
+
+.corpo{
+    position: relative;
+    bottom: 100px;
+    margin-left: 40%;
+    margin-right: 5%;
+
+}
+
+.corpo h2{
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 0;
+}
+
+.colunas{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+}
+
+.bottom{
+    position: relative;
+    bottom: 0px;
+    z-index: -1;
+    margin-top: -200px;
+
+    background-image: linear-gradient(to bottom, rgba(68, 62, 82), rgb(0,0,0,0.7)), url('imagens_home/Captura\ de\ tela\ 2025-01-30\ 222227.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: azure;
+    height: 400px;
+
+}

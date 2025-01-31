@@ -3,149 +3,114 @@
 <html>
     <head>
         <title>Home</title>
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="estilo.css"> 
     </head>
     <body>
         <!-- navbar starts -->
-        <!-- <header>
-            <a href="/" class="logo"><i class="fab fa-node-js"></i> Jigar</a>
+        <header>
 
-            <div id="menu" class="fas fa-bars"></div>
             <nav class="navbar">
                 <ul>
-                <li><a class="active" href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                    <li><a href="curriculo.html">Currículo</a></li>
+                    <!-- <li><a href="arte.html">Galeria de Arte</a></li> -->
                 </ul>
             </nav>
-        </header> -->
+
+            
+        </header>
         <!-- navbar ends -->
 
-        <div id="abas">
-            <div class="aba"><a href="home.html">Home</a></div>
-            <div class="aba"><a href="project.html">Projetos</a></div>
-        </div>
-        
 
-        <h1>
-            Priscila Cunha Vazquez  
-        </h1>
-
-        <div class="divSobre">
-            <div>
-                <img id="minhafoto" src="foto_site.jpg" alt="Foto da autora do site, mulher de cabelo castanho ondulado com franja e óculos">
+        <section id="home">
+            <div class="container">
+                <div class="image-container">
+                    <img src="imagens_home/eu.jpg" alt="Imagem Principal">
+                    <div class="overlay">
+                        <img src="imagens_home/arcane-profile.jpg" alt="Desenho 1">
+                    </div>
+                </div>
+    
+                <div class="nome">
+                    <h1>Priscila Vazquez</h1>
+                    <h2>Engenharia de robôs, desenvolvimento web, escritora e artista!</h2>
+                    <img src="imagens_home/grunge-brush-stroke-banner-2-9.png">
+                </div>
             </div>
+        </section>
+        
+        <section id="about">
+            <div class="infos">
+                <h1>A imaginação pode te levar para onde quiser.</h1>
+                <p>E eu gosto disso. Porque as melhores obras nos inspiram a apredenter e crescer cada vez mais.
+                    Sou Prii, estudante do último ano de <a href="https://portal.fei.edu.br/curso-de-engenharia-de-robos">Engenharia de Robôs</a> na FEI. Sempre gostei de matemática, mas só fui aprender sobre programação além da robótica depois de jogar Hollow Knight, por querer poder desenvolver algo assim! Além da formação, sou escritora, desenhista tradicional e digital, e cosplayer.</p>
+            </div>
+        </section>
 
-            <div>
-                <div  id="sobreTexto">
-                    Sobre mim!
+
+        <section id="projects">
+            <div class="infos" id="proj">
+                <h1>É com persistência que se conquista desejos.</h1>
+                <p> Projetos de programação: os códigos estão disponíveis no meu <a href="https://github.com/Prii15">GitHub</a> ou acessando meu <a href="https://replit.com/@Priscila1402">Replit</a>.<br>
+                    Além disso, aqui você pode conferir alguns dos meus projetos de desenvolvimento web. O meu preferido? Silknever, um joguinho de plataforma! Projetos de escrita: atualmente trabalho com contos, disponíveis no meu <a href="https://www.wattpad.com/user/priistorias">wattpad</a>.<br>
+                    Projetos de arte: desenhos em lápis de cor e digitais, e cosplays estão disponíveis no meu <a href="https://www.instagram.com/prii_arts/">instagram</a>. </p>
+            
+                <div class="tabela">
+                    <table>
+                        <tr>
+                            <th>Nome do Projeto</th> <th>Link do Projeto</th>
+                        </tr>
+                        <tr>
+                            <td>Estudos de html</td> <td> <a href="..\..\MAIN_SERVER\index.html">Link</a> </td>
+                        </tr>
+                        <tr>
+                            <td>Copiando um modelo</td> <td> <a href="..\COPY\copy.html">Link</a> </td>
+                        </tr>
+                        <tr>
+                            <td>Adivinhação</td> <td><a href="..\GUESS\guess.html">Link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Servampdle</td> <td><a href="..\..\servampdle\main.html">Link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Canvas</td> <td><a href="..\CANVAS\canvas.html">Link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Animação</td> <td><a href="..\CANVAS_ANIME\animation.html">Link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Get - Post - Template</td> <td><a href="..\CADASTRO_LOGIN\login.html">Link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Blog</td> <td><a href="..\..\blog">Link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Silknever</td> <td><a href="..\..\Silk_Never\main.html">Link</a></td>
+                        </tr>
+                    </table>
                 </div>
                 
-    
-                <div id="sobre">
-                    
-                    <p class="texto">
-                        Meu nome é Priscila, tenho 21 anos e estou cursando <a href="https://portal.fei.edu.br/curso-de-engenharia-de-robos">Engenharia de Robôs</a> na FEI. <br>
-                        Sempre gostei de matemática, mas só fui inspirada a aprender sobre programação além da robótica depois de jogar Hollow Knight. Me interessei no jogo e em como seria poder desenvolver algo assim!<br><br>
-        
-                        Além da formação, sou escritora e artista (desenhista tradicional e digital) no tempo livre.<br>
-                        Por ser fã de livros e do meio geek, também estou me aventurando no mundo da costura para produzir cosplays.<br>
-                    </p>
-        
-                    <!-- <p class="texto">
-                        Sou de Santos, SP, mas moro a maior parte do ano em São Bernardo do Campo, SP, por conta da faculdade.<br><br>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d645.7035830192256!2d-46.57783188015369!3d-23.724151926230704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce415c18ec14cf%3A0x54806d0c2057b208!2sCondom%C3%ADnio%20Ch%C3%A1cara%20Fontes!5e0!3m2!1spt-BR!2sbr!4v1724782200047!5m2!1spt-BR!2sbr" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </p> -->
-                </div>
+
             </div>
-        </div>
-
-        <!-- about section starts -->
-        <section class="about" id="about">  
         </section>
-        <!-- about section ends -->
         
 
-        <div class="divisao">
-            <h3>
-                Meus projetos!
-            </h3>
+        <section id="contact">
+            <div class="infos">
+                <h1>Se interessou? Entre em contato!</h1>
+                <p>E-Mail: priscilacv1402@gmail.com <br>
+                    LinkedIn: ---<br>
+                    Instagram: @prii_arts</p>
 
-            <ul class="texto">
-                <li>
-                    Programação:
-                </li>
-                <p>
-                    É possível encontrar meus projetos de programação na aba "projetos" do site, acessando meu <a href="https://github.com/Prii15">GitHub</a> ou acessando meu <a href="https://replit.com/@Priscila1402">Replit</a>.
-                </p>
-
-                <li>
-                    Escrita:
-                </li>
-                <p>
-                    Na escrita, comecei com fanfiction e hoje trabalho principalmente com contos, os quais você pode ler através do meu <a href="https://www.wattpad.com/user/priistorias">wattpad</a>.<br>
-                    Além disso, estou no processo de escrita de uma obra maior, então quem sabe um dia vocês não possam conferir!
-                </p>
-
-                <li>
-                    Desenhos:
-                </li>
-                <p>
-                    Minha arte é bem variada, desde desenhos com lápis de cor até artes digitais. Costumo fazer fanarts de personagens que gosto, com algumas obras originais também. Caso se interessem, aceito encomendas, só entrar em contato através do meu <a href="https://www.instagram.com/prii_arts/">instagram</a>, que também é onde você pode conferir meu trabalho!
-                </p>
-
-            </ul>
-        </div>
-        
-        <!-- <div class="divisao">
-            <h3>Exemplos do meu trabalho com arte:</h3>
-            <ul class="texto">
-                <li>
-                    Arte digital:
-                </li>
-                <p class="centro">
-                    <img id="digital1" src="pordosol.jpg" alt="Desenho digital de um casal no pôr do sol, feito por @prii_arts">  <br><br>
-                    <img id="digital2" src="turqueza.jpg" alt="Desenho digital de uma garota de cabelo castanho no por do sol, feito por @prii_arts">
-                    <br><br><br>
-                </p>
-    
-                <li>
-                    Arte tradicional (com lápis de cor):
-                </li>
-                <p class="centro">
-                    <img id="tradicional1" src="servamprodagigante.jpg" alt="Desenho tradicional (em lápis de cor) de dois garotos (Youtarou e Gear de Servamp) em frente a uma roda gigante neon à noite, feito por @prii_arts"> <br><br>
-                    <img id="tradicional2" src="asl.jpg" alt="Desenho tradicional (em lápis de cor) de três garotos (Ace, Sabo e Luffy de One Piece) no por do sol, feito por @prii_arts">
-                    <br><br><br>
-                </p>
-            </ul>
-        </div> -->
-
-        <div class="divisao">
-            <h3>Recomendações!</h3>
-
-            <p class="texto">
-                Eu não sei vocês, mas detesto trabalhar em silêncio... Então, montei uma playlist com músicas que gosto e vou compartilhá-la por aqui!
-                Nela é possível encontrar pop, rock, aberturas de anime, rap de anime, cantoras pouco conhecidas... um pouco de tudo!<br><br>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=ckpGAxG2Ajpvl7fi&amp;list=PL6LoIsyBIamvIUUGjsDWaDRrVQySP-aAC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-                <br><br><br>
-                Como minha cantora preferida é a Taylor Swift, tenho uma playlist só com as músicas dela também!<br><br>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=LlDZn6jGpqR-GyHS&amp;list=PL6LoIsyBIamsvp0SiG_lGBqeT4JS_9A7L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </p>
-        </div>
-
-        <div class="divisao">
-            <h3>Contato!</h3>
-
-            <p class="texto">
-                E-Mail: priscilacv1402@gmail.com
-            </p>
-        </div>
+                <p>Para mais  informações acesse meu <a href="curriculo.html">currículo</a>!</p>
+            </div>
+            
+        </section>
 
     </body>
 </html>

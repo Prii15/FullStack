@@ -1,6 +1,3 @@
-// npm init
-// npm install express ejs mongodb@4.12 colors
-//trabalhando com backend, o js eh executado, e nao linkado em um html
 require("colors");
 let http = require("http");
 let express = require("express");
@@ -222,4 +219,4 @@ let server = http.createServer(app);
 
 server.listen(80);
 
-console.log("servidor rodando...");
+console.log("servidor rodando...".rainbow);

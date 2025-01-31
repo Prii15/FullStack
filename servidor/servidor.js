@@ -15,8 +15,9 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
 app.get('/', function(req, resp){
-    resp.redirect('Site copy/HOME/project.html');
+    resp.redirect('Site copy/HOME/home.html');
 })
+
 
 //AULAS 09 E 10
 app.get('/cadastrar', function(req, resp){

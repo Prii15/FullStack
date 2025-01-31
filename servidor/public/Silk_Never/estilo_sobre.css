@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'Hollow_Knight';
+    src: url('fonts/Trajan\ Pro\ Regular.ttf') format('ttf'),;
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    cursor: url('cursor.cur'), auto;
+
+    margin: 0;
+
+    background-image: url('imagens/voidheart_back.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Altura total da tela */
+
+    font-family: 'Hollow_Knight';
+    color: white;
+}
+
+a{
+    cursor: url('cursor.cur'), auto; 
+
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 30px;
+}
+
+.titulo {
+    max-width: 30%; 
+    z-index: 1;
+    filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.5));
+}
+
+.menu, .divisoria, #gif {
+    position: fixed;
+    bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.menu-item{
+    padding: 15px;
+    margin: 10px;
+    position: relative;
+}
+
+.menu-item:hover{
+    transform: scale(1.1); 
+    
+    filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.7));
+}
+
+.divisoria{
+    filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.3));
+    bottom: 70px;
+}
+
+#gif{
+    left: 5px;
+    bottom: 90px;
+    z-index: 1;
+}
+
+#desenvolvedora{
+    display: flex;
+    flex-direction: row;
+
+    position: relative;
+    top: 50px;
+
+    justify-content: center;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
+
+}
+
+#desenvolvedoraFoto{
+    border-radius: 10px;
+
+    height: 200px;
+    margin: 20px;
+    margin-right: 40px;
+}
+
+#desenvolvedoraSobre{
+    text-align: center;
+    font-size: 20px;
+}
+
+h1{
+    font-size: 30px;
+}
+
+.sites{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
+
+.sites div{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0px;
+}

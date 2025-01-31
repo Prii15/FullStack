@@ -1,0 +1,259 @@
+@font-face {
+    font-family: 'Hollow_Knight';
+    src: url('fonts/Trajan\ Pro\ Regular.ttf') format('ttf'),;
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    cursor: url('cursor.cur'), auto;
+
+    background-image: url("imagens/voidheart_back.png"); /* Imagem de fundo */
+    background-size: cover; /* Cobre toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Faz com que a imagem fique fixa ao rolar */
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Hollow_Knight';
+    color: white;
+}
+
+a, #buttonPlay, .music{
+    cursor: url('cursor.cur'), auto;
+    
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.music {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    z-index: 10;
+
+    background-color: transparent; /* Fundo transparente */
+    border: none; /* Sem borda */
+    padding: 10px; 
+    outline: none; 
+}
+
+.icon {
+    width: 30px; 
+    height: 25px;
+
+    position: fixed;
+    top: 200px;
+    left: 1325px;
+}
+
+.music:hover .icon {
+    filter: brightness(0.8); 
+}
+
+
+.menu {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 25%;
+
+    z-index: 1;
+}
+
+.menu-item{
+    padding: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+
+    margin: 5px;
+    position: relative;
+}
+
+.menu-item:hover{
+    transform: scale(1.1);    
+    filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.5));
+}
+
+canvas {
+    border: 2px solid #000;
+    background-image: url("imagens/backgorundgame.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+}
+
+#canva{
+    position: relative;
+    top: 25px;
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 10px;
+}
+
+.titulo {
+    max-width: 30%; 
+    z-index: 1; 
+}
+
+/* TELA DE MENU DO JOGO */
+#menuJogo{
+    position: relative; 
+    top: 25px;
+
+    background-image: url("imagens/silknerver2_fundo.jpg");
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    border: solid black 3px;
+
+    height: 500px;
+    width: 1200px;
+}
+
+/* TELA DE MENU DO FIM DO JOGO */
+#fim{
+    position: relative; 
+    top: 5px;
+
+    background-image: url("imagens/silknerver2_fundo_fim.jpg");
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    border: solid black 3px;
+
+    height: 500px;
+    width: 1200px;
+}
+
+/* REGRAS DO JOGO */
+#regras{
+    position: relative;
+    top: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 600px;
+
+    font-size: 20px;
+    filter: drop-shadow(2px 2px 5px rgb(0, 0, 0));
+}
+
+.tituloRegras{
+    max-width: 20%; 
+    z-index: 1; 
+    position: relative;
+    top: 20px;
+    left: 15%;
+    filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.5));
+}
+
+#setas{
+    position: relative;
+    top: 30px;
+}
+#setas img{
+    padding: 5px;
+}
+
+#outrasTeclas{
+    display: flex;
+    flex-direction: row;
+
+    position: relative;
+    top: 30px;
+    left: 140px;
+}
+
+#outrasTeclas div{
+    padding: 20px;
+}
+
+.teclas{
+    height: 50px;
+}
+
+/* BOTAO DE PLAY */
+.menu-jogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#buttonPlay{
+    background: none; /* Remove o fundo */
+    border: none; /* Remove a borda */
+    color: rgb(255, 255, 255); 
+    font-size: 70px; 
+    font-family: 'Hollow Knight';
+
+    position: absolute;
+    bottom: 200px;
+    left: 815px;
+}
+
+#buttonPlay:hover, #buttonRestart:hover, #buttonMenu:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.7));
+}
+
+#buttonRestart, #buttonMenu{
+    background: none; /* Remove o fundo */
+    border: none; /* Remove a borda */
+    color: rgb(255, 255, 255); 
+    font-size: 40px;
+    font-family: 'Hollow Knight';
+
+    margin-bottom: 15px;
+    position: relative;
+    left: 300px;
+}
+
+
+
+.tituloFim{
+    max-width: 20%; 
+    z-index: 1; 
+    position: relative;
+    top: 20px;
+    left: 15%;
+}
+
+#pontuacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    width: 600px;
+    position: relative;
+    top: 50px;
+    left: 0px;
+
+    font-size: 20px;
+}
+
